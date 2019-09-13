@@ -95,9 +95,12 @@ class SortingRobot:
         return self._light == "ON"
 
     '''
-        I think I need two loops
-        One to go through the whole list one at a time, while the inner loop goes through the rest of the array, comparing items, finding the smallest
-        Once the smallest is found, put that into the "sorted array"
+        The light is used to check if sorting is still taking place (it is essentially the base case)
+        Put if(self.light_is_on() != True then return 
+        Turn light off when first implementing while self.light_is_on()
+        Turn light back on in any while loops that cause swapping
+        use self.move_right() to go through all indexes of the list
+        At every index, compare items and swap when needed
 
     '''
 
@@ -111,7 +114,6 @@ class SortingRobot:
             # self._light = "OFF"
             self.set_light_off()
 
-        #  self._position < len(self._list) - 1 True if the robot can move right or False
             while(self.can_move_right()):
                 self.move_right()
                 # self._item > self._list[self._position]
