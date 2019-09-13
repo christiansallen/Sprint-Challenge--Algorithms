@@ -16,6 +16,7 @@ If floor is negative, print('cant drop from a negative floor')
 Why not just check if we're on a floor that's higher than the floor that will break the eggs.
 If we are higher than the floor that breaks the eggs, then go down a floor.
 Loop until you reach the safe floor.
-If we're lower than the floor that breaks the eggs, no problem, drop the eggs.
+If we're lower than the floor that breaks the eggs, drop one egg and go up a level. Loop until an egg breaks.
+Once you find the floor that breaks, subtract by 1 and you would've found the highest possible floor to drop eggs.
 
 Runtime would be O(n). Only need to go one loop deep and it the runtime would depend on the number of stories that the building has.
