@@ -101,6 +101,7 @@ class SortingRobot:
         Turn light back on in any while loops that cause swapping
         use self.move_right() to go through all indexes of the list
         At every index, compare items and swap when needed
+        Always go back to beginning of list to sort through it again.
 
     '''
 
